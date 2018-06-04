@@ -23,12 +23,6 @@ notifications:
 
 jobs:
   include:
-    - stage: test
-      script: 
-	- coverage run parser.py
-    - # stage name not required, will continue to use `test`
-      script: 
-	- coverage run parser.py
+    - script: ./test 1 # uses the default stage name "test"
+    - script: ./test 2
     - stage: deploy
-      script: 
-	- coverage run parser.py
