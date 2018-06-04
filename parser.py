@@ -612,7 +612,7 @@ def test(entrada):
 if __name__ == '__main__':
 
 
-    arq = "teste1.pas" ##input()   ## ARRUMAR AQUI NO FIM DO TRABALHO ********************
+    arq = "teste1.txt" ##input()   ## ARRUMAR AQUI NO FIM DO TRABALHO ********************
     f = open(arq, 'r')
     texto = f.readlines()  ## lista de linhas  do texto
     strTexto = textoToString(texto)  ## vetor de caracteres do texto inteiro já maiusculo
