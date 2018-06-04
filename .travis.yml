@@ -21,13 +21,3 @@ notifications:
   email:
     - murilosilva.felipe@gmail.com
     - leozitor@gmail.com
-
-
-jobs:
-  include:
-    - stage: test
-      script: ./parser teste1.pas
-    - # stage name not required, will continue to use `test`
-      script: ./parser teste4.pas
-    - stage: deploy
-      script: ./parser <<teste1.txt
