@@ -20,3 +20,12 @@ notifications:
   email:
     - murilosilva.felipe@gmail.com
     - leozitor@gmail.com
+
+jobs:
+  include:
+    - stage: test
+      script: parser.py
+    - # stage name not required, will continue to use `test`
+      script: parser.py
+    - stage: deploy
+      script: ./deploy
