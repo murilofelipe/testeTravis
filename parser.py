@@ -605,10 +605,13 @@ def parser():
         exit()
 
 ## ------------------  ANALISADOR SINTATICO / PARSER --------------------------
-
+def test(entrada):
+    assert entrada == "< OK - Sucesso >"
 
 
 if __name__ == '__main__':
+
+
     arq = "teste1.pas" ##input()   ## ARRUMAR AQUI NO FIM DO TRABALHO ********************
     f = open(arq, 'r')
     texto = f.readlines()  ## lista de linhas  do texto
@@ -619,5 +622,5 @@ if __name__ == '__main__':
     token = ""
     FIM = tamTexto
     t = parser()
-    assert t == "< OK - Sucesso >"
+    test(t)
     f.close()

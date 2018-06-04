@@ -10,8 +10,6 @@ python:
 install:
   - pip install codecov
 
-script:
-  - coverage run parser.py
 
 after_success:
 - codecov
