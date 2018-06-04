@@ -15,3 +15,8 @@ script:
 
 after_success:
 - codecov
+
+notifications:
+  email:
+    - murilosilva.felipe@gmail.com
+    - leozitor@gmail.com
