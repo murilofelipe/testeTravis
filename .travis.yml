@@ -21,8 +21,15 @@ notifications:
     - murilosilva.felipe@gmail.com
     - leozitor@gmail.com
 
+stages:
+  - compile
+  - test
+  - deploy
+
 jobs:
   include:
     - script: ./test 1 # uses the default stage name "test"
     - script: ./test 2
     - stage: deploy
+      script: ./deploy target-1
+    - script: ./deploy target-2
