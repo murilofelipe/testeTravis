@@ -17,4 +17,4 @@ after_success:
 - codecov
 
 notifications:
-  email: false
+  email: leozitor@gmail.com
