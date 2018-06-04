@@ -7,4 +7,4 @@
   install:
     - pip install -q Django==$DJANGO_VERSION
   script:
-    - pytest
+    - test_parser_tdd.py
