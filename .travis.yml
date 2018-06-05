@@ -20,4 +20,3 @@ after_success:
 notifications:
   email:
     - murilosilva.felipe@gmail.com
-    - leozitor@gmail.com
